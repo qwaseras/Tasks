@@ -1,24 +1,15 @@
-# README
+#Tasks
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Используется:
+	Rails 5.1.1
+	Ruby 2.4.0
+	ReactJs(gem react-rails (2.2.0))
+	db:
+		development: mysql
+		production: postgresql
 
-Things you may want to cover:
+Heroku deploy: https://safe-bastion-49198.herokuapp.com/
 
-* Ruby version
+--------------------------------------------------------
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+На данный момент приложение только отображает список задач и позволяет добавить новую
