@@ -4,15 +4,21 @@ var Tasks = React.createClass({
 		return{
 			tasks: this.props.tasks,
 			description: '',
+			isdone: false,
+			overtaskid: 0
 		}
 	},
 	handleUserInput: function(obj){
 		this.setState(obj)
 	},
 
+
+
 	handleFormSubmit: function(){
 		var task = {
 			description: this.state.description, 
+			isdone : this.state.isdone,
+			overtaskid: this.state.overtaskid
 			};
 		 $.ajax({ 
 		 	url: '/tasks',
@@ -30,8 +36,11 @@ var Tasks = React.createClass({
 
 	render: function(){
 		return (
-			<div  className="container col-md-2 col-md-offset-5">
-				<TaskList tasks={this.state.tasks} />
+			<div >
+				<TaskList tasks={this.state.tasks}
+				 onCheckBoxChange = {this.handleUserInput}
+				 submitCheckBox = {this.submitCheckBox}
+				 />
 				<TaskForm input_description={this.state.description}
 				 onUserInput={this.handleUserInput} 
 				 onFormSubmit={this.handleFormSubmit}/>

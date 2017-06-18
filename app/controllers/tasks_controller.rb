@@ -14,8 +14,13 @@ class TasksController < ApplicationController
   	end
   end
 
+  def update
+  	task = Task.find(params["id"])
+    task.update_attributes(task_params)
+  end
+
   private
   def task_params
-  	params.require(:task).permit(:description)
+  	params.require(:task).permit(:description, :isdone, :overtaskid)
   end
 end
