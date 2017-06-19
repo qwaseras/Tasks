@@ -4,8 +4,7 @@ var TaskList = React.createClass({
 			<div>
 			{this.props.tasks.map(function(task){
 					return(	
-							<Task key={task.id} task={task} 
-								  />
+							<Task key={task.id} task={task} />
 
 					)
 					}
