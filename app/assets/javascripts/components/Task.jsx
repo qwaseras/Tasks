@@ -29,7 +29,7 @@ var Task = React.createClass({
 
 	render: function(){
 		return(
-			<div>			
+			<div id="task" className="container col-md-2 col-md-offset-5 pt-1 pb-1">			
 				<form >
 					<label className="custom-control custom-checkbox">
 					  <input type="checkbox" 

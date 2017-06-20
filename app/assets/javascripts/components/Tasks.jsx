@@ -24,7 +24,7 @@ var Tasks = React.createClass({
 		 	url: '/tasks',
 		 	 type: 'POST', 
 		 	 data: { task },
-		 	 success: (response) => { console.log('it worked!', response); } 
+		 	 success: (response) => { console.log('task added', response); } 
 		 	}).done(function(data){
 		 		this.addNewTask(data);
 		 	}.bind(this));

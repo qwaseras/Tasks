@@ -12,15 +12,18 @@ var TaskForm = React.createClass({
 
 	render: function(){
 		return(
-			<form id="taskForm" className="" onSubmit={this.handleSubmit}>
-				<input name="description" 
+			<div id="formContainer">
+			<form id="taskForm"  onSubmit={this.handleSubmit}>
+				<input id="inputField"
+					name="description" 
 					type="text" 
 					placeholder="Type your task" 
 					value={this.props.input_description} 
 					onChange={this.handleChange}
 				/>
-				<input type="submit" className="btn btn-info" value="Add task"/>
+				<input id="submitButton" type="submit" className="btn btn-info" value="Add task"/>
 			</form>
+			</div>
 		)
 
 	}

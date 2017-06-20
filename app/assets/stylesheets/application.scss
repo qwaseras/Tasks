@@ -1,1 +1,22 @@
 @import "bootstrap";
+
+#task{
+    background-color: gray;
+    max-width: 75%;
+    border-bottom-style: solid;
+    border-width: 1px; 
+    border-color: lightgrey;
+    width: 70%;
+    p{
+        margin-bottom: 0;
+    }
+}
+
+#formContainer{
+    margin-left: 200px;
+}
+
+#inputField{
+    width: 700px;
+    float: left;
+}
