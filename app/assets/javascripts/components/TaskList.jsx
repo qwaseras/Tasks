@@ -12,25 +12,22 @@ var TaskList = React.createClass({
 	// 	)
 	// },
 
-	// taskRender: function(rootTask){
+	// taskRender: function(rootTask,){
 	// 	subTasks = [];
 	// 	this.props.tasks.forEach(function(subTask) {
 	// 		if (subTask.overtaskid == rootTask.id) {
 	// 			subTasks.push(subTask);
 	// 		}
-	// 	}, this);
-		
+	// 	}, this);		
 		
 	// 	return(
-	// 	<Task key = {rootTask.id} task ={rootTask}>
-	// 		if (subTasks.length != 0) {					
+	// 	<Task key = {rootTask.id} task ={rootTask} />
 	// 		subTasks.forEach(function(subTask) {
 	// 			taskRender(subTask)
 	// 		}, this)
-	// 	}
-	// 	</Task>
 	// 	)
 	// },
+	
 	// render: function(){
 	// 	return(
 	// 		<div>
