@@ -42,9 +42,9 @@ var TaskList = React.createClass({
 	render: function(){
 		return(
 			<div>
-			{this.props.tasks.map(function(task){
+			{this.props.tasks.map(function(task, index){
 					return(	
-							<Task key={task.id} task={task} />
+							<Task key={index} task={task} />
 					)
 					}
 				)}
